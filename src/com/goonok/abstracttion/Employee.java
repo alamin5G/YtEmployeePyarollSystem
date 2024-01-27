@@ -9,6 +9,33 @@ public abstract class Employee {
         this.id = id;
     }
 
-    ///TODO - 8:30 MINUTES https://www.youtube.com/watch?v=o-JnANhtMVM
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public abstract double calculateSalary();
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "name='" + name + '\'' +
+                ", id=" + id +
+                ", salary=" + calculateSalary() +
+                '}';
+    }
+
+    ///TODO - 13:40 MINUTES https://www.youtube.com/watch?v=o-JnANhtMVM
 
 }
